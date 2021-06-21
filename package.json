@@ -1,0 +1,27 @@
+{
+  "name": "postman-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjanks/Postman-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjanks/Postman-Clone/issues"
+  },
+  "homepage": "https://github.com/mjanks/Postman-Clone#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.1"
+  },
+  "devDependencies": {
+    "snowpack": "^3.5.9"
+  }
+}
