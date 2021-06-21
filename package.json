@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "snowpack dev"
+    "start": "snowpack dev --polyfill-node"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,7 @@
   },
   "homepage": "https://github.com/mjanks/Postman-Clone#readme",
   "dependencies": {
-    "axios": "^0.21.1",
-    "bootstrap": "^5.0.1"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "snowpack": "^3.5.9"
