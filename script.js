@@ -31,8 +31,8 @@ form.addEventListener('submit', e => {
   axios({
     url: document.querySelector('[data-url]').value,
     method: document.querySelector('[data-method]').value,
-    params: myFunc(queryParamsContainer),
-    headers: myFunc(requestHeadersContainer),
+    params: keyValuePairsToObjects(queryParamsContainer),
+    headers: keyValuePairsToObjects(requestHeadersContainer),
   }).then(response => {
     console.log(response);
   });
@@ -46,7 +46,7 @@ function createKeyValuePair() {
   return element;
 }
 
-function myFunc(container) {
+function keyValuePairsToObjects(container) {
   const pairs = container.querySelectorAll('[data-key-value-pair]');
   return [...pairs].reduce((data, pair) => {
     const key = pair.querySelector('[data-key]').value;
